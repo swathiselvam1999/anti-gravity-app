@@ -7,6 +7,7 @@ import FloatingBG from "../components/FloatingBG";
 
 const Home = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const astronautSize = screenWidth < 480 ? 180 : screenWidth < 768 ? 280 : 400;
 
   // Update on resize
   useEffect(() => {
@@ -38,10 +39,10 @@ const Home = () => {
       {/* 👩‍🚀 Astronaut — responsive size */}
       <FloatingPNG
         src={astronaut}
-        size={screenWidth < 480 ? 220 : screenWidth < 768 ? 320 : 420}
-        left={screenWidth < 480 ? "50%" : "40%"}
-        top="35%"
-        duration={14}
+        size={astronautSize}
+        left={screenWidth < 480 ? "30%" : "40%"}
+        top={screenWidth < 480 ? "45%" : "40%"}
+        duration={12}
         className="drop-shadow-[0_0_10px_rgba(255,255,255,0.4)]"
       />
 

@@ -12,9 +12,9 @@ export default function FloatingElement({ children, index, screenWidth }) {
 
     // Responsive orbit radius
     const radius =
-      screenWidth < 480 ? 150 :
-      screenWidth < 768 ? 250 :
-      380;
+      screenWidth < 480 ? 120 :
+      screenWidth < 768 ? 200 :
+      420;
 
     const depth =
       screenWidth < 480 ? 80 :
