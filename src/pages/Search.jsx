@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import FloatingSearch from "../components/FloatingSearch";
 import FloatingPNG from "../components/FloatingPNG";
 import FloatingBG from "../components/FloatingBG";
