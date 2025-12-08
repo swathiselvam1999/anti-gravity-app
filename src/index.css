@@ -12,3 +12,10 @@ body {
   background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
   overflow-x: hidden;
 }
+
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
